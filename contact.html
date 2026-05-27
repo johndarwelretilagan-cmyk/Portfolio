@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Portfolio — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <div class="page-wrap contact-page">
+    <div class="contact-glow"></div>
+    <div class="page-inner">
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="section-line"></div>
+      <p class="section-desc">I'd love to hear from you. Whether it's a project, an opportunity, or just a hello.</p>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-item"><div class="contact-icon">📧</div><div><div class="contact-label">Email</div><div class="contact-value">Johndarwel@gmail.com</div></div></div>
+          <div class="contact-item"><div class="contact-icon">📱</div><div><div class="contact-label">Phone</div><div class="contact-value">+639 104141785</div></div></div>
+          <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Location</div><div class="contact-value">San Pablo City, Phillipines</div></div></div>
+          <div class="contact-social">
+            <a class="social-btn" href="#" target="_blank" title="LinkedIn">in</a>
+            <a class="social-btn" href="#" target="_blank" title="GitHub">gh</a>
+            <a class="social-btn" href="#" target="_blank" title="Twitter / X">𝕏</a>
+            <a class="social-btn" href="#" target="_blank" title="Instagram">ig</a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-field"><label for="cfName">Name</label><input type="text" id="cfName" placeholder="Your name" /></div>
+            <div class="form-field"><label for="cfEmail">Email</label><input type="email" id="cfEmail" placeholder="your@email.com" /></div>
+          </div>
+          <div class="form-field"><label for="cfSubject">Subject</label><input type="text" id="cfSubject" placeholder="What's this about?" /></div>
+          <div class="form-field"><label for="cfMsg">Message</label><textarea id="cfMsg" placeholder="Tell me more…"></textarea></div>
+          <button class="btn-primary" onclick="submitForm()">Send Message →</button>
+          <div class="form-success" id="formSuccess">✓ Message sent! I'll be in touch soon.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© <span id="year"></span> <span>John Darwel Ilagan</span> · Built with care</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
